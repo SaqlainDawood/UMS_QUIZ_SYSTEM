@@ -12,7 +12,7 @@ import AddQuestion from "./pages/AddQuestion";
 import ManageQuestions from "./pages/ManageQuestions";
 import AddCourse from "./pages/AddCourse";
 import AddSubject from "./pages/AddSubject";
-
+import AdminAnalytics from "./pages/AdminAnalytics";
 function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -68,6 +68,9 @@ function Router() {
       </Route>
       <Route path="/admin/add-subject">
         <ProtectedRoute><AddSubject /></ProtectedRoute>
+      </Route>
+      <Route path='/admin/analytics'>
+      <ProtectedRoute><AdminAnalytics/></ProtectedRoute>
       </Route>
 
       <Route component={NotFound} />

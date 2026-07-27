@@ -127,6 +127,18 @@ export default function AdminDashboard() {
       testId: "btn-admin-preview",
       gradient: "from-emerald-50 to-teal-50",
     },
+     {
+    title: "Bulk Import",
+    desc: "Import multiple MCQs from files",
+    icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4",
+    color: "from-emerald-500 to-teal-600",
+    bg: "bg-emerald-50",
+    text: "text-emerald-600",
+    border: "border-emerald-200",
+    route: "/admin/bulk-import",
+    testId: "btn-admin-bulk-import",
+    gradient: "from-emerald-50 to-teal-50",
+  },
   ];
 
   if (loading) {

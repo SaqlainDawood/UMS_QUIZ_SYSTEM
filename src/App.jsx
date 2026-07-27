@@ -13,6 +13,7 @@ import ManageQuestions from "./pages/ManageQuestions";
 import AddCourse from "./pages/AddCourse";
 import AddSubject from "./pages/AddSubject";
 import AdminAnalytics from "./pages/AdminAnalytics";
+import BulkImportQuestions from "./pages/BulkImportQuestions";
 function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center">
@@ -72,7 +73,9 @@ function Router() {
       <Route path='/admin/analytics'>
       <ProtectedRoute><AdminAnalytics/></ProtectedRoute>
       </Route>
-
+  <Route path="/admin/bulk-import"> 
+        <ProtectedRoute><BulkImportQuestions /></ProtectedRoute>
+      </Route>
       <Route component={NotFound} />
     </Switch>
   );

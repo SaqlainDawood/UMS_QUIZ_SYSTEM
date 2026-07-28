@@ -188,7 +188,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-white border-t border-gray-100 py-6 px-4 text-center">
         <p className="text-gray-400 text-sm">
-          Established by SCIT Department of MUST &copy; {new Date().getFullYear()} &nbsp;| Develop by |<a href="https://marketingboostersoftwarehouse.com/" className="hover:text-indigo-600 transition-colors">Marketing Booster Software House Pvt.Ltd</a> |&nbsp;
+          Established by SCIT Department of MUST &copy; {new Date().getFullYear()} &nbsp;| Develop by | <Link to="https://marketingboostersoftwarehouse.com/" className="hover:text-indigo-600 transition-colors">Marketing Booster Software House Pvt.Ltd</Link> |&nbsp;
+         {/* <a href="https://marketingboostersoftwarehouse.com/" className="hover:text-indigo-600 transition-colors">Marketing Booster Software House Pvt.Ltd</a> */}
           <Link
             href="/admin-login"
             className="text-indigo-500 hover:text-indigo-700 font-medium hover:underline transition-colors"
